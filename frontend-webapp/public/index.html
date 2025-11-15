@@ -1,0 +1,13 @@
+New-Item -ItemType Directory -Path ".\public"
+@"
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frontend WebApp</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+"@ | Out-File -Encoding utf8 ".\public\index.html"
